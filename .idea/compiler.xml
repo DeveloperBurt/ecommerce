@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ecommerce-common" />
+        <module name="ecommerce-order" />
+        <module name="ecommerce-stock" />
+        <module name="ecommerce-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="ecommerce" target="1.8" />
+      <module name="ecommerce-common" target="1.8" />
+      <module name="ecommerce-order" target="1.8" />
+      <module name="ecommerce-stock" target="1.8" />
+      <module name="ecommerce-user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
