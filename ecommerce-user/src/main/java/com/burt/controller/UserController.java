@@ -22,8 +22,6 @@ public class UserController {
     @GetMapping("")
     public String getUser(){
         User user = userService.getUserById(1L);
-        //User user = new User();
-        user.setName("name111");
         return user.getName();
     }
 

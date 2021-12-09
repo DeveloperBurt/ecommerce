@@ -1,6 +1,6 @@
 package com.burt.service.impl;
 
-import com.burt.dao.UserDao;
+import com.burt.mapper.UserMapper;
 import com.burt.model.User;
 import com.burt.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +14,12 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserDao userMapper;
+    private UserMapper userMapper;
 
     @Override
     public User getUserById(Long userId){
         return userMapper.selectByPrimaryKey(userId);
     }
+
+
 }

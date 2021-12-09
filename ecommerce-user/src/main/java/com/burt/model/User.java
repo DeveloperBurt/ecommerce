@@ -3,42 +3,16 @@ package com.burt.model;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * user
- * @author 
- */
 public class User implements Serializable {
-    /**
-     * 主键
-     */
-    private Long id;
-
-    /**
-     * 用户昵称
-     */
-    private String name;
-
-    /**
-     * 性别，0-未知，1-男，2-女
-     */
-    private Byte gender;
-
-    /**
-     * 年龄
-     */
-    private Byte age;
-
-    /**
-     * 创建时间
-     */
-    private Date createTime;
-
-    /**
-     * 更新时间
-     */
-    private Date updateTime;
 
     private static final long serialVersionUID = 1L;
+
+    private Long id;
+    private String name;
+    private int gender;
+    private int age;
+    private Date createTime;
+    private Date updateTime;
 
     public Long getId() {
         return id;
@@ -56,19 +30,19 @@ public class User implements Serializable {
         this.name = name;
     }
 
-    public Byte getGender() {
+    public int getGender() {
         return gender;
     }
 
-    public void setGender(Byte gender) {
+    public void setGender(int gender) {
         this.gender = gender;
     }
 
-    public Byte getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(Byte age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
